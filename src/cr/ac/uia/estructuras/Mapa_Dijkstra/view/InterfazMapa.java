@@ -20,7 +20,7 @@ public  class InterfazMapa extends JPanel{
         Lugar aux = ini;
         while (aux!=null) {
             
-            JButton btn = new JButton();
+            JLabel btn = new JLabel();
             btn.setFont(new Font("New Times Roman", Font.BOLD, 15));
             btn.setText(aux.getStrNom());
             btn.setIcon(new ImageIcon(getClass().getResource("/cr/ac/uia/estructuras/Practica_Estructuras_Mapa/Resources/Location.png")));;
@@ -35,7 +35,7 @@ public  class InterfazMapa extends JPanel{
                 auxC = auxC.getSig();
             }
             
-           btn.addActionListener(new EventoClick(tooltip));
+//           btn.addActionListener(new EventoClick(tooltip));
             add(btn);
             aux = aux.getSig();
         }
